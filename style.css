@@ -60,9 +60,32 @@ nav ul li #active,a:hover{
 
 #checkbtn{
 	float: right;
+/*	background-color: yellow;*/
+/*	padding: 20px;*/
+margin-right: 12px;
+display: none;
 }
 #check{
 	display: none;
+}
+
+
+@media(max-width:812px){
+
+	nav ul li{
+/*		background-color: yellow;*/
+	display: none;
+	}
+
+	#checkbtn{
+		display: block;
+		clear: both;
+	}
+
+	nav ul{
+		background-color: red;
+	}
+
 }
 
 
