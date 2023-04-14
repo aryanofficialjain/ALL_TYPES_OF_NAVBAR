@@ -82,8 +82,8 @@ display: none;
 		height: 50vh;
 		background-color: #de3747;
 		position: fixed;
-		top: 60px;
-		left: -100%;
+/*		top: 60px;*/
+		top: -100%;
 		transition: .5s;
 	}
 
@@ -94,7 +94,7 @@ display: none;
 	}
 
 	#check:checked ~ ul{
-		left: 0%;
+		top: 60px;
 
 
 	}
