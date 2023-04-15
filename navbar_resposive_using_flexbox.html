@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<title>Resposive navbar by myself</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+			font-family: sans-serif;
+		}
+
+		nav{
+			width: 100%;
+			height: 10vh;
+			background-image: linear-gradient(120deg,black,brown,maroon,red);
+		}
+
+		#logo{
+/*			background: red;*/
+/*			padding: 10px;*/
+			color: white;
+			text-shadow: 2px 3px 5px black;
+			line-height: 10vh;
+			font-weight: bolder;
+			font-size: 25px;
+			padding: 10px;
+			margin-left: 40px;
+
+		}
+
+		#check{
+			display: none;
+		}
+		#checkbtn{
+			float: right;
+			line-height: 10vh;
+			margin-right: 20px;
+			font-size: 30px;
+			color: white;
+			text-shadow: 2px 3px 5px black;
+			display: none;
+		}
+
+		nav ul{
+			float: right;
+			list-style-type: none;
+			text-transform: capitalize;
+			margin-right: 30px;
+		}
+
+		nav ul li{
+			display: inline-block;
+/*			background: red;*/
+			line-height: 10vh;
+		}
+
+		nav ul li a{
+/*			background: yellow;*/
+			font-size: 18px;
+			padding: 10px;
+			border-radius: 10px;
+			text-decoration: none;
+			font-weight: bold;
+			color: white;
+			text-shadow: 2px 3px 4px black;
+			margin: 5px;
+			transition: all 1s ease;
+		}
+
+		nav ul li a:hover{
+			background: black;
+		}
+
+		@media(max-width:760px){
+			nav ul{
+/*				display: block;*/
+				width: 100%;
+				height: 45vh;
+				background: red;
+				margin: 0px 0px 0px 0px;
+				text-align: center;
+				position: fixed;
+				right: -100%;
+				transition: all 1s ease-in-out;
+			}
+
+			nav ul li {
+				display: block;
+				line-height: 55px;
+/*				background: yellow;*/
+/*				float: left;*/
+			}
+
+			#checkbtn{
+				display: block;
+			}
+
+
+			#check:checked ~ ul{
+				top: 10vh;
+				right: 0;
+			}
+		}
+
+		@media(max-width:375px){
+			label{
+				font-size: 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<nav>
+		<label id="logo">Logo-Name</label>
+
+		<input type="checkbox" name="" id="check">
+				<label for="check" id="checkbtn"><i class="fa-solid fa-bars"></i></label>
+		<ul>
+			<li><a href="#">home</a></li>
+			<li><a href="#">contact</a></li>
+			<li><a href="#">about</a></li>
+			<li><a href="#">gallery</a></li>
+			<li><a href="#">blog</a></li>
+		</ul>
+	</nav>
+
+</body>
+</html>
